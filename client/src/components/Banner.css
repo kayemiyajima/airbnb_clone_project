@@ -1,0 +1,48 @@
+.banner {
+    height: 80vh;
+    position: relative;
+    background: url('https://www-vacasa.imgix.net/zoom_background_9192_sea_ranch_ca_copy.jpg?auto=format%2Ccompress&ixlib=python-3.1.1&q=45&s=5efd227c1733985605bf5103aac48262');
+    background-size: cover;
+}
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__searchButton {
+    background-color: white !important;
+    font-weight: 900!important;
+    text-transform: inherit !important;
+    color: #ff7779 !important;
+}
+
+.banner__info {
+    background-color: black;
+    color: white;
+    padding-top: 15vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    width: 280px;
+}
+
+.banner__info > h5 {
+    font-weight: 400;
+}
+
+.banner__info > button {
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit;
+    font-weight: 600;
+}
+
+.banner__info > button:hover {
+    background-color: white;
+    color: #ff7779;
+}
+
+.banner__info__logo {
+    height: 50px;
+}
