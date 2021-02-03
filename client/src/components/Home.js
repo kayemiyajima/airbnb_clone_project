@@ -3,6 +3,7 @@ import './Home.css';
 import Banner from './Banner';
 import Card from './Card';
 import Category from './Category';
+import Experiences from './Experiences';
 
 function Home() {
     return (
@@ -32,6 +33,8 @@ function Home() {
                     description='Enjoy the amazing sight of Barcelona with this stunning penthouse'
                     price='€210/night' />
             </div>
+
+            <Experiences />
         </div>
         
     )

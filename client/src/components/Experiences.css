@@ -1,0 +1,50 @@
+.experiences {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+
+.experiences > h1 {
+    padding: 10px;
+}
+
+.experiences > p {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.experiences > button {
+    color: white !important;
+    text-transform: inherit !important;
+    border: 1px solid white !important;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.experiences__card {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.experiences__card > img {
+    object-fit: fill;
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.experiences__card__info {
+    margin-top: -50px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+    background-color: #222222;
+    z-index: 5;
+}

@@ -3,18 +3,7 @@
     position: relative;
     background: url('https://www-vacasa.imgix.net/zoom_background_9192_sea_ranch_ca_copy.jpg?auto=format%2Ccompress&ixlib=python-3.1.1&q=45&s=5efd227c1733985605bf5103aac48262');
     background-size: cover;
-}
-
-.banner__search {
-    display: flex;
-    flex-direction: column;
-}
-
-.banner__searchButton {
-    background-color: white !important;
-    font-weight: 900!important;
-    text-transform: inherit !important;
-    color: #ff7779 !important;
+    z-index: -1;
 }
 
 .banner__info {

@@ -32,9 +32,15 @@
     background-color: #EBEBEB;
 }
 
-.searchBar__container__item:active {
+.searchBar__container__item:focus {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px;
     background-color: white;
+}
+
+.searchBar__container__item > input {
+    border: none;
+    outline-width: 0;
+    background-color: inherit;
 }
 
 .searchBar__container__item__title {
@@ -57,4 +63,11 @@
     border-radius: 999px !important;
     height: 50px !important;
     width: 110px !important;
+}
+
+.searchBar__datePicker {
+    position: absolute;
+    top: 95px;
+    left: 25%;
+    width: 100%;
 }
