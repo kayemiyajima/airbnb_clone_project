@@ -38,7 +38,7 @@ function Header() {
                     </Button>
                 </div>
             </div>
-            <div>
+            <div className='header__searchBar'>
                 {showSearch && <SearchBar />}
             </div>
         </div>

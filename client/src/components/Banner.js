@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Banner.css';
 import { Button } from '@material-ui/core';
-import Search from './Search';
+import Search from './DatePicker';
 
 function Banner() {
     const [showDatePicker, setShowDatePicker] = useState(false);

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './Search.css';
+import './DatePicker.css';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRangePicker } from 'react-date-range';
 import { Button } from '@material-ui/core';
 import PeopleIcon from '@material-ui/icons/People';
 
-function Search() {
+function DatePicker() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
@@ -22,7 +22,7 @@ function Search() {
     }
 
     return (
-        <div className='search'>
+        <div className='datePicker'>
             <DateRangePicker 
                 ranges={[selectionRange]}
                 onChange={handleSelect} 
@@ -41,4 +41,4 @@ function Search() {
     )
 }
 
-export default Search
+export default DatePicker
