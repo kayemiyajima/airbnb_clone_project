@@ -6,6 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Avatar, Button } from '@material-ui/core';
 import SearchBar from './SearchBar';
 import { Link } from 'react-router-dom';
+import { Hidden } from '@material-ui/core';
 
 function Header() {
     const [showSearch, setShowSearch] = useState(false);
@@ -15,10 +16,18 @@ function Header() {
             <div className='header__top'>
                 <div className='header__left'>
                     <Link to ='/'>
-                        <img 
-                            className='header__left__logo'
-                            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwlrSk-L2PTJLgKmKZ4FH-4_LYRqGkwjJBw&usqp=CAU'
-                            alt='airbnb logo'/>
+                        <Hidden smDown>
+                            <img 
+                                className='header__left__logo'
+                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwlrSk-L2PTJLgKmKZ4FH-4_LYRqGkwjJBw&usqp=CAU'
+                                alt='airbnb logo'/>
+                        </Hidden>
+                        <Hidden mdUp>
+                            <img 
+                                className='header__left__logo'
+                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fYsTmR0-TXLa06mx13LRXBgbNyBgylU3cw&usqp=CAU'
+                                alt='airbnb logo'/>
+                        </Hidden>
                     </Link>
                 </div>
                 <div className='header__center'>

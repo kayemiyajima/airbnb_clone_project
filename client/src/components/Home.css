@@ -1,12 +1,19 @@
-* {
-    margin: 0;
-}
-
 .home__section {
-    display: flex;
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-.home__section > h1 {
-    margin: 10px;
+.home__section__card {
+    height: 420px;
+    min-width: 280px;
+}
+
+@media screen and (max-width: 768px) {
+    .home__section__card {
+        width: 180px;
+    }
 }

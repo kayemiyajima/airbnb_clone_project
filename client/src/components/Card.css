@@ -1,7 +1,7 @@
 .card {
     margin: 10px;
+    width: 90%;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
     transition: transform 150ms ease-in;
     cursor: pointer;
@@ -11,19 +11,24 @@
     transform: scale(1.07);
 }
 
-.card > img {
+.card__image {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__image > img {
     object-fit: fill;
-    min-width: 300px;
+    min-width: 280px;
     height: 200px;
     width: 100%;
 }
 
 .card__info {
     margin-top: -9px;
-    border-radius: 10px;
     padding: 20px;
     padding-top: 20px;
     border: 1;
+    white-space: pre-wrap;
 }
 
 .card__info > h2 {

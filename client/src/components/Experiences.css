@@ -26,25 +26,75 @@
     top: 50px;
 }
 
-.experiences__card {
-    margin: 10px;
-    overflow: hidden;
+.experiences__cardCotainer {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
 }
 
-.experiences__card > img {
-    object-fit: fill;
-    max-height: 300px;
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
+.experiences__container1 {
+    grid-column: 1/2;
+    grid-row: 1/-1;
 }
 
-.experiences__card__info {
-    margin-top: -50px;
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 20px;
-    border: 1;
-    background-color: #222222;
-    z-index: 5;
+.experiences__container2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.experiences__container3 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.experiences__container4 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+@media screen and (max-width: 768px) {
+    .experiences__cardCotainer {
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+    }
+    .experiences__container2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .experiences__container3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .experiences__container4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .experiences__cardCotainer {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .experiences__container1 {
+        flex: 1 0 300px
+    }
+    .experiences__container2 {
+        flex: 1 0 300px
+    }
+    .experiences__container3 {
+        flex: 1 0 300px
+    }
+    .experiences__container4 {
+        display: initial;
+        flex: 1 0 300px
+    }
+
+    .experiences > button { 
+        top: 168px;
+    }
 }

@@ -1,0 +1,36 @@
+.experienceCard {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 150ms ease-in;
+    cursor: pointer;
+}
+
+.experienceCard:hover {
+    transform: scale(1.05);
+}
+
+.experienceCard__image > img { 
+    object-fit: cover;
+    max-width: 480px;
+    max-height: 412px;
+    width: 100%;
+}
+
+.experienceCard__info {
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+    height: 64px;
+    background-color: #222222;
+}
+
+.experienceCard__info > h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

@@ -5,6 +5,11 @@ import { useHistory } from 'react-router-dom';
 
 function Banner() {
     const history = useHistory();
+
+    const handleClick = () => {
+        history.push('/explore');
+    }
+    
     return (
         <div className='banner'>
             <div className='banner__info'>
@@ -20,7 +25,7 @@ function Banner() {
                 <br />
                 <Button 
                     variant='contained'
-                    onClick={() => history.push('/explore')}
+                    onClick={handleClick}
                 >
                         Explore nearby stays
                 </Button>
