@@ -93,13 +93,12 @@
 }
 
 @media screen and (max-width: 425px) {
-
     .header__center {
-        width: 100%;
+        width: 90vw;
     }
 
     .header__center__searchButton {
-        width: 90vw;
+        width: 100%;
     }
 
     .header__right {

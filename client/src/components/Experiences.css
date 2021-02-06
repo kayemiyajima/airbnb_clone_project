@@ -27,29 +27,62 @@
 }
 
 .experiences__cardCotainer {
-    padding: 30px;
+    margin: 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 50% 25% 25% ;
+    grid-template-rows: 50% 50%;
+    gap: 20px;
 }
 
-.experiences__container1 {
+.experiences__card{
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 150ms ease-in;
+    cursor: pointer;
+    background-color: #222222;
+}
+
+.experiences__card:hover {
+    transform: scale(1.05);
+}
+
+.experiences__card > img { 
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 75px);
+}
+
+.experiences__info {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: flex-strat;
+}
+
+.experiences__info > h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.container1 {
     grid-column: 1/2;
     grid-row: 1/-1;
 }
 
-.experiences__container2 {
+.container2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.container3 {
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-.experiences__container3 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.experiences__container4 {
-    grid-column: 3/5;
+.container4 {
+    grid-column: 2/4;
     grid-row: 2/3;
 }
 
@@ -58,17 +91,17 @@
         grid-template-columns: 2fr 1fr ;
         grid-template-rows: 1fr 1fr ;
     }
-    .experiences__container2 {
+    .container2 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
-    .experiences__container3 {
+    .container3 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    .experiences__container4 {
+    .container4 {
         display: none;
     }
 }
@@ -80,18 +113,22 @@
         overflow-y: hidden;
     }
 
-    .experiences__container1 {
-        flex: 1 0 300px
+    .container1 {
+        flex: 1 0 300px;
+        height: 400px;
     }
-    .experiences__container2 {
-        flex: 1 0 300px
+    .container2 {
+        flex: 1 0 300px;
+        height: 400px;
     }
-    .experiences__container3 {
-        flex: 1 0 300px
+    .container3 {
+        flex: 1 0 300px;
+        height: 400px;
     }
-    .experiences__container4 {
+    .container4 {
         display: initial;
-        flex: 1 0 300px
+        flex: 1 0 300px;
+        height: 400px;
     }
 
     .experiences > button { 

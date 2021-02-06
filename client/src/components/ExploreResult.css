@@ -20,7 +20,7 @@
 
 .exploreResult__heart {
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 40px;
 }
 
@@ -68,4 +68,32 @@
     position: absolute;
     bottom: 20px;
     right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .exploreResult__infoBottom {
+        align-items: flex-end;
+    }
+    .exploreResult__price {
+        position: initial;
+    }
+    
+    .exploreResult__price > p {
+        display: none;
+    }
+
+    .exploreResult__price > h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .exploreResult {
+        flex-direction: column;
+    }
+
+    .exploreResult__infoTop {
+        width: 90%;
+    }
+
 }

@@ -34,14 +34,14 @@ function SearchBar() {
         <div className='searchBar'>
             <div className='searchBar__cotaniner'>
                 <div className='searchBar__container__item'>
-                    <p className='searchBar__container__item__title'>Location</p>
+                    <p className='searchBar__container__item__title location'>Location</p>
                     <input type='text' placeholder='Where are you going?' />
                 </div>
-                <div className='searchBar__container__item' onClick={()=> setShowDatePicker(!showDatePicker)}>
+                <div className='searchBar__container__item datepicker' onClick={()=> setShowDatePicker(!showDatePicker)}>
                     <p className='searchBar__container__item__title'>Date</p>
                     <p className='searchBar__container__item__text'>Add date</p>
                 </div>
-                <div className='searchBar__container__item'>
+                <div className='searchBar__container__item guest'>
                     <p className='searchBar__container__item__title'>Guests</p>
                     <input 
                         min={0} 
